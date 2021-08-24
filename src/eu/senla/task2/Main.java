@@ -6,22 +6,29 @@ package eu.senla.task2;
 import java.util.*;
 
 public class Main {
-    private static String v = "";
+    public static int v;
+    public static int c = 0;
+    public static char b;
+    public static int num = 0;
+    public static int q;
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String a = sc.nextLine();
         int x = a.length();
-        for (int xx = 0; xx<x; xx++) {
-            int c = 0;
-            int c1 = 3;
-            String b = a.substring(c ,c1);
-            c1 = c1 + 1;
-            System.out.println("числа " + b);
-            v = v + b;
-        }
-        System.out.println("Длинна строки " + x);
-        System.out.println("числа " + v);
+        for (int xx = 0; xx < x; xx++) {
+            b = a.charAt(c);
+            c++;
+            if (b>=48&&b<=57){
+             num = Integer.parseInt(String.valueOf(b));
+                v = v + num;}}
+            if(v >= 0){System.out.println("Cумма цифр, присутствующих в данной строке = "+v);}else{
+                q = 0;
+                System.out.println("Cумма цифр, присутствующих в данной строке = " + q);}
+   }
 
-    }
 }
+
+
+
+
