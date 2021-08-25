@@ -4,16 +4,21 @@
 package eu.senla.task4;
 import java.util.*;
 public class Main {
-    public static String a;
-    public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
+    public static int a=0;
+
+    public static void main(String[] args) {
+
         System.out.println("Введите целое число: ");
-        if (sc.hasNextInt()){
-            int a = sc.nextInt();
-        }else {
-            System.out.println("Вы ввели не целоечисло, введите заново: ");
-        }
+        while (a == 0) {
+            Scanner sc = new Scanner(System.in);
+            if (sc.hasNextInt()) {
+                int a = sc.nextInt();
+            } else {
+                System.out.println("Вы ввели не целое число, введите заново: ");
+
+
+            }
 
         }
     }
-
+}
