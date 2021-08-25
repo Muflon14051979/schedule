@@ -14,9 +14,13 @@ public class Main {
             Scanner sc = new Scanner(System.in);
             if (sc.hasNextInt()) {
                 int a = sc.nextInt();
-                break;
-            } else {
-                System.out.println("Вы ввели не целое число, введите заново: ");
+            if(a%2==0) {
+
+
+                    break;
+                } else {
+                    System.out.println("Вы ввели не целое число, введите заново: ");
+                }
             }
 
         }
