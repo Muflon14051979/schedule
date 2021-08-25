@@ -31,8 +31,11 @@ public class Main {
 
             }
         }
-        System.out.println("Число первое максимально x : " + x);
+        System.out.println("Число первое максимально x : " + x + x + "2"+ "2");
         System.out.println("Число первое максимально itog : " + itogx);
 
     }
 }
+/*
+не правильно понял условие буду переделывать!
+ */
