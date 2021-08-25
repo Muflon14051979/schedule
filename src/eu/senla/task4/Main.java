@@ -5,15 +5,27 @@ package eu.senla.task4;
 import java.util.*;
 public class Main {
     public static int a=0;
+    public static int b=0;
 
     public static void main(String[] args) {
 
-        System.out.println("Введите целое число: ");
+        System.out.println("Введите первое целое число: ");
         while (a == 0) {
             Scanner sc = new Scanner(System.in);
             if (sc.hasNextInt()) {
                 int a = sc.nextInt();
-            break;
+                break;
+            } else {
+                System.out.println("Вы ввели не целое число, введите заново: ");
+            }
+
+        }
+        System.out.println("Введите второе целое число: ");
+        while (b == 0) {
+            Scanner sc = new Scanner(System.in);
+            if (sc.hasNextInt()) {
+                int b = sc.nextInt();
+                break;
             } else {
                 System.out.println("Вы ввели не целое число, введите заново: ");
             }
