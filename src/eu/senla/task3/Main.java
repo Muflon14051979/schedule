@@ -42,6 +42,8 @@ public class Main {
         double bbbbb1 = bbb1 * bbb1;
         double bbbb1 = (y1x2 - bbbbb1);
         double itogo2 = bbb1 + (bbbb1 / (2*bbb1));
+        double proiz1_x1y2 = itogo1 * itogo2;
+        double proiz2_x2y1 = itogo1 * itogo2;
 
 
 /*
@@ -51,8 +53,8 @@ public class Main {
         System.out.println("Число в кваррате для первого остаток от корня " + aaaa1);
 
  */
-        System.out.println("Длинна вектора x1y2 " + itogo1);
-        System.out.println("Длинна вектора y1x2 " + itogo2);
+        System.out.println("Длинна вектора x1y2 " + proiz1_x1y2);
+        System.out.println("Длинна вектора y1x2 " + proiz2_x2y1);
 
     }
 }
