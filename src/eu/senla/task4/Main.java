@@ -20,16 +20,7 @@ public class Main {
             }
 
         }
-        System.out.println("Введите второе целое число: ");
-        while (b == 0) {
-            Scanner sc = new Scanner(System.in);
-            if (sc.hasNextInt()) {
-                int b = sc.nextInt();
-                break;
-            } else {
-                System.out.println("Вы ввели не целое число, введите заново: ");
-            }
 
-        }
+
     }
 }
