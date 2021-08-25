@@ -6,6 +6,11 @@ import java.util.*;
 public class Main {
     public static int a=0;
     public static int b=0;
+    public static int x=0;
+    public static int itog=0;
+    public static int itogx=0;
+    public static int xx=0;
+
 
     public static void main(String[] args) {
 
@@ -15,14 +20,19 @@ public class Main {
             if (sc.hasNextInt()) {
                 int a = sc.nextInt();
             if(a%2==0) {
-                    break;
-                } else {
-                    System.out.println("Вы ввели не целое число, введите заново: ");
-                }
+                while(itog<=a){
+                    x++;
+                    itogx= itog;
+                    itog = x * x;
+                    }
+                x--;
+                break;} else{
+                System.out.println("Вы ввели не целое число, введите заново: ");}
+
             }
-
         }
-
+        System.out.println("Число первое максимально x : " + x);
+        System.out.println("Число первое максимально itog : " + itogx);
 
     }
 }
